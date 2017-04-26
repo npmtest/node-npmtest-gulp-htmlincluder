@@ -1,6 +1,6 @@
 # npmtest-gulp-htmlincluder
 
-#### test coverage for  [gulp-htmlincluder (v0.1.0)](https://github.com/internetErik/gulp-htmlincluder)  [![npm package](https://img.shields.io/npm/v/npmtest-gulp-htmlincluder.svg?style=flat-square)](https://www.npmjs.org/package/npmtest-gulp-htmlincluder) [![travis-ci.org build-status](https://api.travis-ci.org/npmtest/node-npmtest-gulp-htmlincluder.svg)](https://travis-ci.org/npmtest/node-npmtest-gulp-htmlincluder)
+#### basic test coverage for  [gulp-htmlincluder (v0.1.0)](https://github.com/internetErik/gulp-htmlincluder)  [![npm package](https://img.shields.io/npm/v/npmtest-gulp-htmlincluder.svg?style=flat-square)](https://www.npmjs.org/package/npmtest-gulp-htmlincluder) [![travis-ci.org build-status](https://api.travis-ci.org/npmtest/node-npmtest-gulp-htmlincluder.svg)](https://travis-ci.org/npmtest/node-npmtest-gulp-htmlincluder)
 
 #### Gulp plugin for building HTML files into each other.  Made for a workflow involving responsive unit testing.
 
@@ -10,7 +10,7 @@
 |--:|:--|
 | coverage : | [![istanbul-coverage](https://npmtest.github.io/node-npmtest-gulp-htmlincluder/build/coverage.badge.svg)](https://npmtest.github.io/node-npmtest-gulp-htmlincluder/build/coverage.html/index.html)|
 | test-report : | [![test-report](https://npmtest.github.io/node-npmtest-gulp-htmlincluder/build/test-report.badge.svg)](https://npmtest.github.io/node-npmtest-gulp-htmlincluder/build/test-report.html)|
-| build-artifacts : | [![build-artifacts](https://npmtest.github.io/node-npmtest-gulp-htmlincluder/glyphicons_144_folder_open.png)](https://github.com/npmtest/node-npmtest-gulp-htmlincluder/tree/gh-pages/build)|
+| test-server-github : | [![github.com test-server](https://npmtest.github.io/node-npmtest-gulp-htmlincluder/GitHub-Mark-32px.png)](https://npmtest.github.io/node-npmtest-gulp-htmlincluder/build/app/index.html) | | build-artifacts : | [![build-artifacts](https://npmtest.github.io/node-npmtest-gulp-htmlincluder/glyphicons_144_folder_open.png)](https://github.com/npmtest/node-npmtest-gulp-htmlincluder/tree/gh-pages/build)|
 
 - [https://npmtest.github.io/node-npmtest-gulp-htmlincluder/build/coverage.html/index.html](https://npmtest.github.io/node-npmtest-gulp-htmlincluder/build/coverage.html/index.html)
 
@@ -90,7 +90,8 @@
         "coveralls": "istanbul cover ./node_modules/mocha/bin/_mocha --report lcovonly -- -R spec && cat ./coverage/lcov.info | ./node_modules/coveralls/bin/coveralls.js && rm -rf ./coverage",
         "test": "istanbul test _mocha --report html -- test/*.js --reporter spec"
     },
-    "version": "0.1.0"
+    "version": "0.1.0",
+    "bin": {}
 }
 ```
 
